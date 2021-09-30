@@ -19,34 +19,24 @@
         display: none;
       }
     </style>
-    <link rel="stylesheet" href="/umi.css" />
     <script>
       window.routerBase = "/";
     </script>
-    <script>
-      //! umi version: 3.5.13
-    </script>
-    <script>
-      !(function () {
-        var e = localStorage.getItem("dumi:prefers-color"),
-          t = window.matchMedia("(prefers-color-scheme: dark)").matches,
-          r = ["light", "dark", "auto"];
-        document.documentElement.setAttribute(
-          "data-prefers-color",
-          e === r[2] ? (t ? r[1] : r[0]) : r.indexOf(e) > -1 ? e : r[0]
-        );
-      })();
-    </script>
+    <style>
+      :root {
+        font-family: -apple-system, blinkmacsystemfont, 'Helvetica Neue', helvetica, segoe ui, arial, roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-
+    <div style="padding: 30vh 0 0; font-size: 24px; text-align: center; color: #aaaaaa;">
+      Redirecting to mobile.ant.deisgn...
+    </div>
     <script>
-      if (location.pathname.startsWith("/~demos/")) {
-        document.body.style.background = "#f5f7fa";
-      }
+      window.setTimeout(function() {
+        window.location.href = 'https://mobile.ant.design'
+      }, 1000)
     </script>
     <script src="https://s9.cnzz.com/z_stat.php?id=1280306924&amp;web_id=1280306924"></script>
-    <script src="/umi.js"></script>
   </body>
 </html>
